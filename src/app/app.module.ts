@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RecomendacaoInserirComponent } from './componentes/recomendacao-inserir/recomendacao-inserir.component';
+import { RecomendacaoListarComponent } from './componentes/recomendacao-listar/recomendacao-listar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RecomendacaoInserirComponent
+    RecomendacaoInserirComponent,
+    RecomendacaoListarComponent
   ],
   imports: [
     BrowserModule
