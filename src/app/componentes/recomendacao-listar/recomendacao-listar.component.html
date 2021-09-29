@@ -1,17 +1,21 @@
-<table class="table mt-4">
-  <thead>
-    <tr class="text-center">
-      <th scope="col">Recomendações</th>
-    </tr>
-  </thead>
-  <tbody *ngIf="recomendacoes.length < 1">
-    <tr >
-      <td class="text-center">Nenhuma recomendação cadastrada!</td>
-    </tr>
-  </tbody>
-  <tbody *ngIf="recomendacoes.length > 0">
-    <tr *ngFor="let recomendacao of recomendacoes" class="text-center">
-      <td>{{ recomendacao }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="row">
+  <div class="col-md-6 col-sm-12">
+    <table class="table mt-4">
+      <thead>
+        <tr class="text-center">
+          <th scope="col">Recomendações</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="recomendacoes.length < 1">
+        <tr >
+          <td class="text-center">Nenhuma recomendação cadastrada!</td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="recomendacoes.length > 0">
+        <tr *ngFor="let recomendacao of recomendacoes" class="text-center">
+          <td>{{ recomendacao }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
